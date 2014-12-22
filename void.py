@@ -1,3 +1,11 @@
+#
+# void.py
+#   Python-written helper tool to Void Linux's xbps-* tools
+#   Written for personal ease of use, not robustness.
+#
+# Copyright (c) 2014Sean R. Lang <srlang@ncsu.edu>
+#
+
 from subprocess import call     # for external shell calls
 from sys import argv            # for command line arguments
 
