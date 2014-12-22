@@ -13,12 +13,15 @@ from sys import argv            # for command line arguments
 ##########################################################################
 # xbps subcommands
 def void_install(args):
+    '''Install the specified package atoms.'''
     pass
 
 def void_remove(args):
+    '''Remove the specified package atoms.'''
     pass
 
 def void_query(args):
+    '''Perform a search operation for a package atom'''
     pass
 
 def find_command(cmd):
@@ -43,10 +46,13 @@ Usage: void <operation>[flags] [package]
 """
 
 def usage(args=None):
+    '''Display a usage message to the user.'''
     print USAGE_MESSAGE
 ##########################################################################
 
+
 def main(argv):
+    '''Main program logic'''
     if len(argv) > 1:
         cmd = argv[1]
         func = find_command(cmd)
